@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333; /* Color de texto predeterminado para modo claro */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #fc3e25);
+    color: white;
+}
+
+.animate__animated {
+    animation-duration: 2s;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #fff; /* Fondo de la tarjeta en modo claro */
+    color: #333; /* Texto de la tarjeta en modo claro */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e; /* Fondo de la tarjeta en modo oscuro */
+    border-color: #333;
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode .form-control {
+    background-color: #333; /* Fondo del campo de formulario en modo oscuro */
+    color: #ffffff; /* Texto del campo de formulario en modo oscuro */
+    border-color: #555;
+}
+
+.dark-mode .form-label {
+    color: #ffffff; /* Texto de la etiqueta del formulario en modo oscuro */
+}
+
+.dark-mode .social-icons a {
+    color: #ffffff; /* Iconos blancos en modo oscuro */
+}
+
+.dark-mode .lead {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h5 {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode p {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode .btn-primary {
+    background-color: #0d6efd; /* Color del botón en modo oscuro */
+    border-color: #0d6efd;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #0b5ed7; /* Color del botón al pasar el mouse en modo oscuro */
+    border-color: #0a58ca;
+}
+
+/* Projects Section */
+#projects h2 {
+    color: #333; /* Color del título en modo claro */
+}
+
+.dark-mode #projects h2 {
+    color: #ffffff; /* Color del título en modo oscuro */
+}
