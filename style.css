@@ -1,105 +1,120 @@
-/* General Styles */
+/* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
-    color: #333; /* Color de texto predeterminado para modo claro */
 }
 
-/* Navbar */
+.section {
+    padding: 100px 0;
+}
+
 .navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #343a40;
 }
 
-/* Home Section */
-#home {
-    height: 100vh;
-    background: linear-gradient(135deg, #6a11cb, #fc3e25);
-    color: white;
+.navbar .nav-link, .navbar .navbar-brand {
+    color: #fff;
 }
 
-.animate__animated {
-    animation-duration: 2s;
+.navbar .nav-link:hover {
+    color: #ffc107;
 }
 
-/* Cards */
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    background-color: #fff; /* Fondo de la tarjeta en modo claro */
-    color: #333; /* Texto de la tarjeta en modo claro */
+.btn-dark-mode {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-left: 10px;
 }
 
-.card:hover {
+/* Gradiente Animado */
+.gradient-bg {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Foto del Desarrollador */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Animación del Nombre */
+.animated-name {
+    font-size: 1.5rem;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #fff; }
+    50% { color: #ffc107; }
+    100% { color: #fff; }
+}
+
+/* Cards de Proyectos y Experiencia */
+.project-card, .experience-card {
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    animation: heartbeat 3s infinite;
+}
+
+.project-card:hover, .experience-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.project-card {
-    animation: heartbeat 2s infinite;
 }
 
 @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
 }
 
-/* Dark Mode */
-.dark-mode {
+/* Iconos Sociales */
+.social-icons a {
+    margin: 0 10px;
+    color: #343a40;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
     background-color: #121212;
-    color: #ffffff; /* Texto blanco en modo oscuro */
+    color: #fff;
 }
 
-.dark-mode .navbar {
-    background-color: #1a1a1a !important;
+body.dark-mode .navbar {
+    background-color: #1c1c1c;
 }
 
-.dark-mode .card {
-    background-color: #1e1e1e; /* Fondo de la tarjeta en modo oscuro */
-    border-color: #333;
-    color: #ffffff; /* Texto blanco en modo oscuro */
+body.dark-mode .nav-link, body.dark-mode .navbar-brand {
+    color: #fff;
 }
 
-.dark-mode .form-control {
-    background-color: #333; /* Fondo del campo de formulario en modo oscuro */
-    color: #ffffff; /* Texto del campo de formulario en modo oscuro */
-    border-color: #555;
+body.dark-mode .section {
+    background-color: #1c1c1c;
 }
 
-.dark-mode .form-label {
-    color: #ffffff; /* Texto de la etiqueta del formulario en modo oscuro */
+body.dark-mode .card {
+    background-color: #2c2c2c;
+    color: #fff;
+    border-color: #444;
 }
 
-.dark-mode .social-icons a {
-    color: #ffffff; /* Iconos blancos en modo oscuro */
+body.dark-mode .btn-primary {
+    background-color: #ffc107;
+    color: #000;
 }
 
-.dark-mode .lead {
-    color: #ffffff; /* Texto blanco en modo oscuro */
-}
-
-.dark-mode h1, .dark-mode h2, .dark-mode h5 {
-    color: #ffffff; /* Texto blanco en modo oscuro */
-}
-
-.dark-mode p {
-    color: #ffffff; /* Texto blanco en modo oscuro */
-}
-
-.dark-mode .btn-primary {
-    background-color: #0d6efd; /* Color del botón en modo oscuro */
-    border-color: #0d6efd;
-}
-
-.dark-mode .btn-primary:hover {
-    background-color: #0b5ed7; /* Color del botón al pasar el mouse en modo oscuro */
-    border-color: #0a58ca;
-}
-
-/* Projects Section */
-#projects h2 {
-    color: #333; /* Color del título en modo claro */
-}
-
-.dark-mode #projects h2 {
-    color: #ffffff; /* Color del título en modo oscuro */
+body.dark-mode .gradient-bg {
+    background: linear-gradient(270deg, #4a2c2a, #5f3c2a);
 }

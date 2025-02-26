@@ -9,75 +9,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Manolo Vargas, desarrollador frontend con experiencia en tecnologías modernas.">
-    <meta name="keywords" content="portafolio, desarrollador frontend, HTML, CSS, JavaScript, Bootstrap">
+    <meta name="description" content="Portafolio de Manolo Vargas, Desarrollador Frontend especializado en tecnologías modernas como HTML5, CSS3 y JavaScript.">
+    <meta name="keywords" content="frontend, desarrollador, portafolio, tecnología, proyectos, responsive">
     <meta name="author" content="Manolo Vargas">
-    <title>Portafolio de Manolo Vargas</title>
+    <title>Manolo Vargas | Desarrollador Frontend</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar Fixed -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navegación fija -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Portafolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand animated-name" href="#">Manolo Vargas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-                    <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-light">
-                            <i class="fas fa-moon"></i> Modo Oscuro
-                        </button>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item"><button id="darkModeToggle" class="btn btn-dark-mode"><i class="fas fa-moon"></i> Modo Oscuro</button></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="d-flex align-items-center justify-content-center text-center">
-        <div class="container">
-            <img src="https://cdn3.iconfinder.com/data/icons/data-science-set-01-2/65/20-512.png" alt="Foto de Manolo Vargas" class="img-thumbnail rounded-circle mb-3">
-            <h1 class="animate__animated animate__bounce">Manolo Vargas</h1>
-            <p class="lead">Desarrollador Frontend | Especialista en Tecnologías Modernas</p>
-            <div class="social-icons">
-                <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-light mx-2"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-            </div>
+    <!-- Sección Inicio -->
+    <section id="home" class="section gradient-bg">
+        <div class="container text-center">
+            <img src="https://cdn3.iconfinder.com/data/icons/data-science-set-01-2/65/20-512.png" alt="Foto de Manolo Vargas" class="profile-img img-thumbnail rounded-circle">
+            <h1 class="mt-3">¡Hola! Soy Manolo Vargas</h1>
+            <p class="lead">Desarrollador Frontend apasionado por crear experiencias digitales únicas.</p>
+            <a href="#projects" class="btn btn-primary mt-3"><i class="fas fa-eye"></i> Ver Proyectos</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="text-center mb-4">Sobre Mí</h2>
-            <p class="text-center">Soy un desarrollador frontend con más de 5 años de experiencia en la creación de interfaces de usuario modernas y responsivas. Me especializo en HTML5, CSS3, JavaScript y frameworks como Bootstrap.</p>
+            <h2 class="text-center"><i class="fas fa-user"></i> Sobre Mí</h2>
+            <p>Soy un desarrollador Frontend con 5 años de experiencia en la industria tecnológica. Me especializo en HTML5, CSS3, JavaScript y frameworks como Bootstrap, creando interfaces modernas, accesibles y responsivas. Mi pasión es combinar diseño y funcionalidad para ofrecer soluciones innovadoras.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section gradient-bg">
         <div class="container">
-            <h2 class="text-center mb-4">Proyectos</h2>
+            <h2 class="text-center"><i class="fas fa-folder-open"></i> Proyectos</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card project-card">
                         <img src="https://www.tucanit.com/wp-content/uploads/2021/10/almadraba.jpg" class="card-img-top img-thumbnail" alt="Proyecto 1">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
+                            <h5 class="card-title">Gestión Marina</h5>
+                            <p class="card-text">Aplicación web para la gestión sostenible de recursos marinos.</p>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-link"></i> Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
@@ -85,8 +78,9 @@
                     <div class="card project-card">
                         <img src="https://www.tucanit.com/wp-content/uploads/2021/10/oficina.jpg" class="card-img-top img-thumbnail" alt="Proyecto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
+                            <h5 class="card-title">ColaboraTech</h5>
+                            <p class="card-text">Plataforma de colaboración remota para equipos tecnológicos.</p>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-link"></i> Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
@@ -94,8 +88,9 @@
                     <div class="card project-card">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIjzhc7m8zFXXhW09E_ZnBNVNRCAwdKZHAQ&s" class="card-img-top img-thumbnail" alt="Proyecto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
+                            <h5 class="card-title">E-Shop</h5>
+                            <p class="card-text">Tienda online con integración de pagos y diseño responsive.</p>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-link"></i> Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
@@ -103,32 +98,35 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-5">
+    <!-- Sección Experiencia -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="text-center mb-4">Experiencia Profesional</h2>
+            <h2 class="text-center"><i class="fas fa-briefcase"></i> Experiencia</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card experience-card">
                         <div class="card-body">
-                            <h5 class="card-title">Empresa 1</h5>
-                            <p class="card-text">Desarrollador Frontend (2020-2022)</p>
+                            <h5 class="card-title">Desarrollador Frontend Senior</h5>
+                            <p class="card-text"><strong>TechCorp</strong> - 2020-Presente</p>
+                            <p>Lideré proyectos de interfaces empresariales, optimizando la usabilidad en un 30%.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card experience-card">
                         <div class="card-body">
-                            <h5 class="card-title">Empresa 2</h5>
-                            <p class="card-text">Desarrollador Full Stack (2018-2020)</p>
+                            <h5 class="card-title">Desarrollador Frontend</h5>
+                            <p class="card-text"><strong>InnovaSoft</strong> - 2018-2020</p>
+                            <p>Desarrollé sitios web responsivos para clientes en sectores tecnológicos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card experience-card">
                         <div class="card-body">
-                            <h5 class="card-title">Empresa 3</h5>
-                            <p class="card-text">Diseñador UI/UX (2016-2018)</p>
+                            <h5 class="card-title">Desarrollador Junior</h5>
+                            <p class="card-text"><strong>StartWeb</strong> - 2016-2018</p>
+                            <p>Colaboré en proyectos iniciales aplicando buenas prácticas de frontend.</p>
                         </div>
                     </div>
                 </div>
@@ -136,30 +134,35 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <!-- Sección Contacto -->
+    <section id="contact" class="section gradient-bg">
         <div class="container">
-            <h2 class="text-center mb-4">Contacto</h2>
+            <h2 class="text-center"><i class="fas fa-envelope"></i> Contacto</h2>
             <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
             </form>
+            <div class="social-icons mt-4 text-center">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
+    <footer class="text-center py-3">
         <p>&copy; 2023 Manolo Vargas. Todos los derechos reservados.</p>
     </footer>
 
@@ -168,7 +171,4 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
-</html>
-    <script type="module" src="script.js"></script>
-  </body>
 </html>
