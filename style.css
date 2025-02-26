@@ -1,4 +1,94 @@
 /* Estilos Generales */
+/* Fondo con Gradiente Sutil */
+.gradient-bg {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    padding: 150px 0;
+    min-height: 100vh; /* Opcional: asegura que ocupe toda la pantalla */
+    display: flex;
+    align-items: center;
+}
+
+/* Foto del Perfil Mejorada */
+.profile-img {
+    width: 200px; /* Ajusta el tamaño según prefieras */
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    border-radius: 100%; /* Hace la foto circular */
+    border: 3px solid #600606; /* Borde blanco sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 0 auto; /* Centra la foto */
+    display: block;
+}
+
+/* Tipografía Mejorada */
+.name-text {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.highlight-name {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.subtitle-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-top: 10px;
+}
+
+/* Botón Mejorado */
+.btn-custom {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre ícono y texto */
+}
+
+.btn-custom:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #fff; /* Mantiene el texto blanco al hacer hover */
+}
+
+/* Espaciado y Alineación */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    .name-text {
+        font-size: 2rem;
+    }
+    .subtitle-text {
+        font-size: 1rem;
+    }
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .gradient-bg {
+        padding: 100px 0; /* Menos espacio en móviles */
+    }
+}
 body {
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -40,12 +130,6 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Foto del Desarrollador */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
 
 /* Animación del Nombre */
 .animated-name {
